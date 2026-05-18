@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    
+    <script>
+      (function(w, d){
+        var id='spdt-capture', n='script';
+        if (!d.getElementById(id)) {
+          w.spdt =
+            w.spdt ||
+            function() {
+              (w.spdt.q = w.spdt.q || []).push(arguments);
+            };
+          var e = d.createElement(n); e.id = id; e.async=1;
+          e.src = 'https://pixel.byspotify.com/ping.min.js';
+          var s = d.getElementsByTagName(n)[0];
+          s.parentNode.insertBefore(e, s);
+        }
+
+        w.spdt('conf', { key: '4ca771b35aac4515895e3ee6a73c842f' });
+        w.spdt('view');
+
+      })(window, document);
+    </script>
+</head>
+<body>
+
+    <h1>Hello, World!</h1>
+    <p>This is a basic test page.</p>
+
+</body>
+</html>
